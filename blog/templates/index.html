@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">Crypto</h1>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#" class="nav-a">Главная</a></li>
+          <li class="nav-li"><a href="#content" class="nav-a">Контент</a></li>
+          <li class="nav-li"><a href="#info" class="nav-a">Новости</a></li>
+          <li class="nav-li"><a href="#footer" class="nav-a">Выполнил</a></li>
+        </ul>
+      </nav>
+      <div class="box-img">
+        <img src="{% static 'image/header.jpg' %}" alt="" class="img-header" />
+        <div class="title-box">
+          <h1 class="title-header">Crypto - Web</h1>
+          <p class="text-header">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+            eligendi officia officiis alias, assumenda sunt. Molestias ipsum
+            sunt iste minima dolore ad placeat voluptas alias, reprehenderit
+            vitae ipsam, itaque cum.
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="box-title-main" id="content">
+        <h1 class="title-main">Main content</h1>
+        <p class="text-main">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+          voluptas nisi accusantium, deleniti consequuntur cum necessitatibus
+          eveniet voluptatum voluptatibus sint. Veniam libero corrupti nisi non
+          optio debitis voluptatibus minus officiis.
+        </p>
+      </div>
+
+      <div class="wrapper">
+        <div class="cards">
+          {% for i in card %}
+          <div class="card">
+            <img src="{{ i.image.url }}" alt="" width="300px" />
+            <div class="card-container">
+              <h1>{{i.title}}</h1>
+              <div class="text-content">
+                {{i.text}}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <div class="card">
+            <img src="{% static 'image/image copy 2.png' %}" alt="" width="300px" />
+            <div class="card-container">
+              <h1>Bitcoin</h1>
+              <div class="text-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum velit, eligendi distinctio, libero provident harum
+                facilis tenetur dolorum officiis
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'image/image copy 2.png' %}" alt="" width="300px" />
+            <div class="card-container">
+              <h1>Bitcoin</h1>
+              <div class="text-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum velit, eligendi distinctio, libero provident harum
+                facilis tenetur dolorum officiis
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'image/image copy 2.png' %}" alt="" width="300px" />
+            <div class="card-container">
+              <h1>Bitcoin</h1>
+              <div class="text-content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laborum velit, eligendi distinctio, libero provident harum
+                facilis tenetur dolorum officiis
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-title-main">
+          <h1 class="title-main">Main info</h1>
+          <p class="text-main">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+            voluptas nisi accusantium, deleniti consequuntur cum necessitatibus
+            eveniet voluptatum voluptatibus sint. Veniam libero corrupti nisi
+            non optio debitis voluptatibus minus officiis.
+          </p>
+        </div>
+        {% for j in info %}
+        <div class="info-box" id="info">
+          <img src="{{ j.image.url }}" alt="" width="600" />
+          <div class="text-container">
+            <h1 class="title-content">{{j.title}}</h1>
+            <p class="text-content">
+              {{j.text}}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+        <div class="info-box" id="info">
+          <img src="{% static 'image/image.png' %}" alt="" width="600" />
+          <div class="text-container">
+            <h1 class="title-content">Title info</h1>
+            <p class="text-content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              voluptate dicta aliquam ducimus magnam voluptatem rerum laborum
+              sint temporibus, ex delectus, aspernatur soluta reprehenderit
+              incidunt cumque totam deleniti id accusantium!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"><p class="text-content">Выполнил студент 3 курса</p></footer>
+  </body>
+</html>

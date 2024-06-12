@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    position: relative;
+}
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+.box-img{
+    overflow: hidden;
+    position: relative;
+}
+
+body{
+    background-color: rgb(9, 31, 65);
+}
+.img-header{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.title-box{
+    width: 500px;
+    font-size: 25px;
+    position: absolute;
+    z-index: 12;
+    top: 10%;
+    right: 5%;
+    color: white;
+}
+.text-header{
+    color: rgba(255, 255, 255, 0.582);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(14, 30, 54, 0.397);
+    color: white;
+    padding: 30px;
+}
+.nav-ul{
+    display: flex;
+    gap: 80px;
+    list-style:none;
+}
+.nav-a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.title-main{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.text-main{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.5);
+}
+.box-title-main{
+    margin: 70px 0;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.text-container{
+    width: 600px;
+    font-size: 25px;
+    color: white;
+}
+.text-content{
+    color: rgba(255, 255, 255, 0.5);
+}
+.card{
+    overflow: hidden;
+    color: white;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #121212;
+
+}
+.card-container{
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 100px 0;
+}
+footer{
+    background-color: #121212;
+    width: 100%;
+    font-size: 30px;
+    padding: 40px;
+    margin-top: 100px;
+}
